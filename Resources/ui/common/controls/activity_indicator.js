@@ -20,7 +20,8 @@ function activity_indicator(_args) {
 	Ti.include("/etc/version.js");
 	var isIOS7 = isiOS7Plus();
 
-	var indicatorAdded = false
+
+	var indicatorAdded = false;
 	//
 	// BASE INDICATOR
 	//
