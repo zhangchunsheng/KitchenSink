@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">liJfUVebUCy24HepDlCeYOtGeeMcU7WD</property>
+    <property name="acs-oauth-key-production" type="string">Qb8cUGCAcp6ClS9vNKsrO8eInizOEXcp</property>
+    <property name="acs-api-key-production" type="string">wjPPhxMaL4xrjQr6cChNKA9xLJ20DwdY</property>
+    <property name="acs-oauth-secret-development" type="string">dZdaMrTt8XfDfEmsYzKo60pPmZQmazbp</property>
+    <property name="acs-oauth-key-development" type="string">81gu5nyPD3iiznzreOMO3kTMtJRKY9Ry</property>
+    <property name="acs-api-key-development" type="string">Ed3CjIq5edSPRqL223n3sbPpeNNLbF5i</property>
     <deployment-targets>
         <target device="tizen">true</target>
         <target device="mobileweb">true</target>
@@ -51,7 +57,7 @@
                     </intent-filter>
                 </activity>
             </application>
-            <uses-sdk android:targetSdkVersion="11"/>
+            <uses-sdk android:targetSdkVersion="16"/>
         </manifest>
         <tool-api-level>11</tool-api-level>
         <activity android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"/>
@@ -95,9 +101,5 @@
         <access origin="https://my.appcelerator.com/auth/login" subdomains="true"/>
         <access origin="http://appc.me/Test/Cookies/" subdomains="true"/>
     </tizen>
-    <modules>
-        <module platform="tizen">tizen</module>
-        <module platform="android">facebook</module>
-        <module platform="iphone">facebook</module>
-    </modules>
+    <modules/>
 </ti:app>
